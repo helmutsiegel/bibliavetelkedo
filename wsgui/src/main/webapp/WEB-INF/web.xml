@@ -32,4 +32,13 @@
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Registartion</servlet-name>
+        <jsp-file>login/registartion.html</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Registartion</servlet-name>
+        <url-pattern>/Registration</url-pattern>
+    </servlet-mapping>
 </web-app>

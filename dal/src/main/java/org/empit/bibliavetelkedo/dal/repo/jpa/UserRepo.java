@@ -47,7 +47,7 @@ public class UserRepo extends GenericRepo<UserBE> {
 
     public boolean checkUsernameAndPassword(String username, String password) {
         try {
-            Query query = em.createQuery("SELECT COUNT(e) FROM UsebBE e where e.username like :uname and e.password like :pwd");
+            Query query = em.createQuery("SELECT COUNT(e) FROM UserBE e where e.username like :uname and e.password like :pwd");
             query.setParameter("uname", username);
             query.setParameter("pwd", password);
             Long count = (Long) query.getSingleResult();

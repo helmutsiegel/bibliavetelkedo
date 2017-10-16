@@ -15,6 +15,9 @@
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.0.12" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.5" />
           <element id="library" level="project" name="Maven: org.slf4j:log4j-over-slf4j:1.7.5" />
+          <element id="archive" name="service-layer-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="servicelayer" />
+          </element>
           <element id="archive" name="dal-1.0-SNAPSHOT.jar">
             <element id="module-output" name="dal" />
           </element>
@@ -27,6 +30,9 @@
           <element id="library" level="project" name="Maven: org.junit.jupiter:junit-jupiter-api:5.0.1" />
           <element id="library" level="project" name="Maven: org.opentest4j:opentest4j:1.0.0" />
           <element id="library" level="project" name="Maven: org.junit.platform:junit-platform-commons:1.0.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.6.3" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.6.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.6.3" />
           <element id="library" level="project" name="Maven: org.glassfish.maven.plugin:maven-glassfish-plugin:2.1" />
           <element id="library" level="project" name="Maven: au.net.ocean.maven.plugin:maven-plugin:1.0" />
           <element id="library" level="project" name="Maven: au.net.ocean.maven.plugin:maven-plugin-annotations:1.0" />

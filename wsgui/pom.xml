@@ -76,7 +76,7 @@
 
         <dependency>
             <groupId>org.empit</groupId>
-            <artifactId>dal</artifactId>
+            <artifactId>service-layer</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
