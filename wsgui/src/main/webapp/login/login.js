@@ -1,6 +1,11 @@
 var obj = {
     username: '',
-    password: ''
+    password: '',
+    fname: '',
+    lname: '',
+    password1: '',
+    password2: '',
+    regusername: ''
 };
 
 ko.applyBindings(obj);
@@ -20,5 +25,9 @@ function login() {
 
     xhttp.open("GET", "rest/login?username=" + obj.username + "&password=" + obj.password, true);
     xhttp.send();
+
+}
+
+function registartion() {
 
 }

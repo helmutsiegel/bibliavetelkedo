@@ -7,69 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81a353a3-173a-46dc-aa80-062fc6e13bd8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_api_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/convert/UserConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/dto/UserDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/services/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/LoginRest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/binding/knockout-3.4.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/binding/knockout.mapping-2.4.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/css/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/css/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/css/modules.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/css/myModals.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/bootstrap-3.3.7-dist/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/login/login.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/login/registartion.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/styles/styles.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dal/target/classes/org/empit/bibliavetelkedo/dal/repo/jpa/UserRepo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wsgui/target/ws-gui/META-INF/MANIFEST.MF" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/target/dal-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/dal/target/dal-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbscripts/target/dbscripts-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/dbscripts/target/dbscripts-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/servicelayer/target/service-layer-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/servicelayer/target/service-layer-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/ws-gui.war" afterPath="$PROJECT_DIR$/wsgui/target/ws-gui.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/ws-gui/WEB-INF/lib/dal-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/wsgui/target/ws-gui/WEB-INF/lib/dal-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/wsgui_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/wsgui_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/ws-gui/WEB-INF/lib/service-layer-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/wsgui/target/ws-gui/WEB-INF/lib/service-layer-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/UserRepo.java" afterPath="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/UserRepo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/dal/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbscripts/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/dbscripts/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/servicelayer/pom.xml" afterPath="$PROJECT_DIR$/servicelayer/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/servicelayer/servicelayer.iml" afterPath="$PROJECT_DIR$/servicelayer/servicelayer.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/servicelayer/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/servicelayer/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/servicelayer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/servicelayer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/pom.xml" afterPath="$PROJECT_DIR$/wsgui/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/src/main/webapp/login/login.html" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/login/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/src/main/webapp/login/login.js" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/login/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/src/main/webapp/login/registartion.html" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/login/registartion.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/wsgui/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/wsgui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/wsgui/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/ws-gui/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/wsgui/target/ws-gui/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/ws-gui/index.jsp" afterPath="$PROJECT_DIR$/wsgui/target/ws-gui/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/ws-gui/login/login.html" afterPath="$PROJECT_DIR$/wsgui/target/ws-gui/login/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/wsgui.iml" afterPath="$PROJECT_DIR$/wsgui/wsgui.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/ws-gui/login/login.js" afterPath="$PROJECT_DIR$/wsgui/target/ws-gui/login/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/ws-gui/login/registartion.html" afterPath="$PROJECT_DIR$/wsgui/target/ws-gui/login/registartion.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -101,8 +55,8 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/login/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+            <state relative-caret-position="36">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="7" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -111,8 +65,8 @@
       <file leaf-file-name="registartion.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/login/registartion.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state relative-caret-position="450">
+              <caret line="28" column="51" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -128,21 +82,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/login/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            <state relative-caret-position="230">
+              <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRepo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserRepo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/UserRepo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="51" column="48" lean-forward="false" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+            <state relative-caret-position="325">
+              <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -161,8 +115,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            <state relative-caret-position="216">
+              <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -244,7 +198,6 @@
         <option value="$PROJECT_DIR$/dbscripts/src/main/resources/insert_data.sql" />
         <option value="$PROJECT_DIR$/dbscripts/src/main/resources/run.sh" />
         <option value="$PROJECT_DIR$/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/UserRest.java" />
-        <option value="$PROJECT_DIR$/wsgui/src/main/webapp/login/registartion.html" />
         <option value="$PROJECT_DIR$/wsgui/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/wsgui/pom.xml" />
         <option value="$PROJECT_DIR$/servicelayer/pom.xml" />
@@ -253,11 +206,12 @@
         <option value="$PROJECT_DIR$/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/convert/UserConverter.java" />
         <option value="$PROJECT_DIR$/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/services/UserService.java" />
         <option value="$PROJECT_DIR$/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/LoginRest.java" />
-        <option value="$PROJECT_DIR$/wsgui/src/main/webapp/login/login.js" />
         <option value="$PROJECT_DIR$/wsgui/src/main/webapp/styles/styles.css" />
-        <option value="$PROJECT_DIR$/wsgui/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/wsgui/src/main/webapp/login/login.html" />
         <option value="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/UserRepo.java" />
+        <option value="$PROJECT_DIR$/wsgui/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/wsgui/src/main/webapp/login/registartion.html" />
+        <option value="$PROJECT_DIR$/wsgui/src/main/webapp/login/login.js" />
       </list>
     </option>
   </component>
@@ -1053,7 +1007,7 @@
       <workItem from="1508090047113" duration="5463000" />
       <workItem from="1508095575762" duration="412000" />
       <workItem from="1508167163750" duration="2411000" />
-      <workItem from="1508170057825" duration="3594000" />
+      <workItem from="1508170057825" duration="4765000" />
     </task>
     <servers />
   </component>
@@ -1087,7 +1041,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17518000" />
+    <option name="totallyTimeSpent" value="18689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
@@ -1105,7 +1059,7 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1449,14 +1403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/login/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/styles/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
@@ -1469,30 +1415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/login/registartion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1519,8 +1441,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/UserRepo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="51" column="48" lean-forward="false" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+        <state relative-caret-position="325">
+          <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/login/registartion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="28" column="51" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/login/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding />
         </state>
       </provider>

@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Login</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
 
+<form>
+
+    <div class="container">
+        <label><b>First Name</b></label>
+        <input type="text" placeholder="ex: Benjamin" name="fname" data-bind="value:fname" required>
+
+        <label><b>Last Name</b></label>
+        <input type="text" placeholder="ex: Kocsis" name="lname" data-bind="value:lname" required>
+
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" data-bind="value:regusername" required>
+
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" data-bind="value:password1" required>
+
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw" data-bind="value:password2" required>
+
+        <button type="button" onclick="registartion()">Subbmit</button>
+
+    </div>
+</form>
+
 </body>
+<script src="binding/knockout-3.4.2.js"></script>
+<script src="binding/knockout.mapping-2.4.1.js"></script>
+<script src="login/login.js"></script>
 </html>

@@ -7,7 +7,7 @@
 
 <form>
     <input value="Login" type="button" onclick="window.location.href='Login'">
-    <input value="Registration" type="button" onclick="window.location.href='Registartion'">
+    <input value="Registration" type="button" onclick="window.location.href='Registration'">
 </form>
 </body>
 </html>
