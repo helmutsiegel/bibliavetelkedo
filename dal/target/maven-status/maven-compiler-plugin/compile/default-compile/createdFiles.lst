@@ -1,0 +1,3 @@
+org/empit/bibliavetelkedo/dal/entity/UserBE.class
+org/empit/bibliavetelkedo/dal/repo/GenericRepo.class
+org/empit/bibliavetelkedo/dal/repo/jpa/UserRepo.class

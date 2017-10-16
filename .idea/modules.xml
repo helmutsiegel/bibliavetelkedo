@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bibliavetelkedo.iml" filepath="$PROJECT_DIR$/bibliavetelkedo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dal/dal.iml" filepath="$PROJECT_DIR$/dal/dal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dbscripts/dbscripts.iml" filepath="$PROJECT_DIR$/dbscripts/dbscripts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servicelayer/servicelayer.iml" filepath="$PROJECT_DIR$/servicelayer/servicelayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wsgui/wsgui.iml" filepath="$PROJECT_DIR$/wsgui/wsgui.iml" />
+    </modules>
+  </component>
+</project>

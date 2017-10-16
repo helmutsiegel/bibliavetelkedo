@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="wsgui:war">
+    <output-path>$PROJECT_DIR$/wsgui/target</output-path>
+    <root id="archive" name="ws-gui.war">
+      <element id="artifact" artifact-name="wsgui:war exploded" />
+    </root>
+  </artifact>
+</component>
