@@ -80,7 +80,7 @@ public class UserRepo extends GenericRepo<UserBE> {
 
     public UserBE getByUsername(String username) {
         try {
-            Query query = em.createQuery("SELECT e FROM UserBe e where e.username like :username");
+            Query query = em.createQuery("SELECT e FROM UserBE e where e.username like :username");
             query.setParameter("username", username);
             List<UserBE> result = (List<UserBE>) query.getResultList();
             if (result == null || result.size() == 0) {

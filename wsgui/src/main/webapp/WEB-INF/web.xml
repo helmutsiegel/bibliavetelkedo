@@ -8,6 +8,13 @@
 
     <display-name>Archetype Created Web Application</display-name>
 
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.html</url-pattern>
+            <page-encoding>UTF-8</page-encoding>
+        </jsp-property-group>
+    </jsp-config>
+
     <servlet>
         <servlet-name>jersey-serlvet</servlet-name>
         <servlet-class>
@@ -33,6 +40,16 @@
         <url-pattern>/Login</url-pattern>
     </servlet-mapping>
 
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>org.empit.bibliavetelkedo.wsgui.filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <servlet-name>Login</servlet-name>
+    </filter-mapping>
+
+
     <servlet>
         <servlet-name>Registartion</servlet-name>
         <jsp-file>login/registartion.html</jsp-file>
@@ -40,5 +57,36 @@
     <servlet-mapping>
         <servlet-name>Registartion</servlet-name>
         <url-pattern>/Registration</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Home</servlet-name>
+        <jsp-file>home/home.html</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Home</servlet-name>
+        <url-pattern>/Home</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>HomePageFilter</filter-name>
+        <filter-class>org.empit.bibliavetelkedo.wsgui.filter.HomePageFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>HomePageFilter</filter-name>
+        <servlet-name>Home</servlet-name>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>Game</servlet-name>
+        <jsp-file>game/game.html</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Game</servlet-name>
+        <url-pattern>/Game</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -16,7 +16,7 @@ function login() {
         if (this.readyState === 4 && this.status === 200) {
             var response = JSON.parse(this.responseText);
             if (response.login == "true") {
-                alert("yep")
+                window.location.href = "Home?&username=" + obj.username + "&password=" + obj.password;
             } else {
                 alert("no")
             }
@@ -29,5 +29,5 @@ function login() {
 }
 
 function registartion() {
-    
+
 }

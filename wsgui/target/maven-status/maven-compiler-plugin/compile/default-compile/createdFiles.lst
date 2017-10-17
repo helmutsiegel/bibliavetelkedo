@@ -1,2 +1,4 @@
 org/empit/bibliavetelkedo/wsgui/rest/LoginRest.class
 org/empit/bibliavetelkedo/wsgui/rest/UserRest.class
+org/empit/bibliavetelkedo/wsgui/filter/HomePageFilter.class
+org/empit/bibliavetelkedo/wsgui/filter/LoginFilter.class
