@@ -10,6 +10,10 @@
         </provider>
 
         <class>org.empit.bibliavetelkedo.dal.entity.UserBE</class>
+        <class>org.empit.bibliavetelkedo.dal.entity.QuestionBE</class>
+        <class>org.empit.bibliavetelkedo.dal.entity.HelpBE</class>
+        <class>org.empit.bibliavetelkedo.dal.entity.AnswerBE</class>
+        <class>org.empit.bibliavetelkedo.dal.entity.GameBE</class>
 
 
         <properties>
@@ -21,7 +25,9 @@
             <property name="javax.persistence.jdbc.user" value="root"/>
             <property name="javax.persistence.jdbc.password" value="root"/>
 
+            <property name="eclipselink.refresh" value="true"/>
             <property name="eclipselink.logging.level" value="FINE"/>
+            <property name="eclipselink.query-results-cache" value="false"/>
         </properties>
     </persistence-unit>
 </persistence>
