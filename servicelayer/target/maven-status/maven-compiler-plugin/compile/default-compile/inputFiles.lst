@@ -1,4 +1,5 @@
 /media/helmut/Data2/Programming/bibliavetelkedo/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/services/UserService.java
 /media/helmut/Data2/Programming/bibliavetelkedo/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/convert/UserConverter.java
 /media/helmut/Data2/Programming/bibliavetelkedo/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/services/GameService.java
+/media/helmut/Data2/Programming/bibliavetelkedo/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/services/QuestionService.java
 /media/helmut/Data2/Programming/bibliavetelkedo/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/dto/UserDTO.java

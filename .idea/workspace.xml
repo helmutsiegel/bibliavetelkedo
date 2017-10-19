@@ -7,43 +7,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81a353a3-173a-46dc-aa80-062fc6e13bd8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/AnswerBE.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/GameBE.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/HelpBE.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/HelpEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/QuestionBE.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/GameRepo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/QuestionRepo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/services/GameService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/GameRest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/QuestionRest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/game/game.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wsgui/target/classes/home/home.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/services/QuestionService.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/servicelayer/target/classes/org/empit/bibliavetelkedo/servicelayer/convert/UserConverter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/servicelayer/target/classes/org/empit/bibliavetelkedo/servicelayer/dto/UserDTO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/servicelayer/target/classes/org/empit/bibliavetelkedo/servicelayer/services/GameService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/servicelayer/target/classes/org/empit/bibliavetelkedo/servicelayer/services/UserService.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/wsgui/target/ws-gui/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wsgui/target/ws-gui/WEB-INF/classes/home/home.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/target/classes/org/empit/bibliavetelkedo/dal/entity/GameBE.class" afterPath="$PROJECT_DIR$/dal/target/classes/org/empit/bibliavetelkedo/dal/entity/GameBE.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/target/classes/org/empit/bibliavetelkedo/dal/entity/QuestionBE.class" afterPath="$PROJECT_DIR$/dal/target/classes/org/empit/bibliavetelkedo/dal/entity/QuestionBE.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/target/classes/org/empit/bibliavetelkedo/dal/entity/UserBE.class" afterPath="$PROJECT_DIR$/dal/target/classes/org/empit/bibliavetelkedo/dal/entity/UserBE.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/target/classes/org/empit/bibliavetelkedo/dal/repo/jpa/QuestionRepo.class" afterPath="$PROJECT_DIR$/dal/target/classes/org/empit/bibliavetelkedo/dal/repo/jpa/QuestionRepo.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/target/dal-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/dal/target/dal-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbscripts/target/dbscripts-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/dbscripts/target/dbscripts-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/servicelayer/target/service-layer-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/servicelayer/target/service-layer-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/classes/org/empit/bibliavetelkedo/wsgui/rest/QuestionRest.class" afterPath="$PROJECT_DIR$/wsgui/target/classes/org/empit/bibliavetelkedo/wsgui/rest/QuestionRest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/ws-gui.war" afterPath="$PROJECT_DIR$/wsgui/target/ws-gui.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/ws-gui/WEB-INF/classes/org/empit/bibliavetelkedo/wsgui/rest/QuestionRest.class" afterPath="$PROJECT_DIR$/wsgui/target/ws-gui/WEB-INF/classes/org/empit/bibliavetelkedo/wsgui/rest/QuestionRest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/ws-gui/WEB-INF/lib/dal-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/wsgui/target/ws-gui/WEB-INF/lib/dal-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/ws-gui/WEB-INF/lib/service-layer-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/wsgui/target/ws-gui/WEB-INF/lib/service-layer-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/dal/src/main/resources/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/target/classes/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/dal/target/classes/META-INF/persistence.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/GameBE.java" afterPath="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/GameBE.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/QuestionBE.java" afterPath="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/QuestionBE.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/UserBE.java" afterPath="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/UserBE.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/QuestionRepo.java" afterPath="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/QuestionRepo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/dal/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/dal/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dal/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/dal/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbscripts/src/main/resources/insert_data.sql" afterPath="$PROJECT_DIR$/dbscripts/src/main/resources/insert_data.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbscripts/target/classes/insert_data.sql" afterPath="$PROJECT_DIR$/dbscripts/target/classes/insert_data.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbscripts/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/dbscripts/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/servicelayer/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/servicelayer/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/servicelayer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/servicelayer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/servicelayer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/servicelayer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/QuestionRest.java" afterPath="$PROJECT_DIR$/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/QuestionRest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/src/main/webapp/game/game.html" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/game/game.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/src/main/webapp/game/game.js" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/game/game.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/src/main/webapp/home/home.html" afterPath="$PROJECT_DIR$/wsgui/src/main/webapp/home/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/wsgui/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/wsgui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/wsgui/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/ws-gui/game/game.html" afterPath="$PROJECT_DIR$/wsgui/target/ws-gui/game/game.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/ws-gui/game/game.js" afterPath="$PROJECT_DIR$/wsgui/target/ws-gui/game/game.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgui/target/ws-gui/home/home.html" afterPath="$PROJECT_DIR$/wsgui/target/ws-gui/home/home.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,11 +62,9 @@
       <file leaf-file-name="AnswerBE.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/AnswerBE.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,55 +72,41 @@
       <file leaf-file-name="GameBE.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/GameBE.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="24" />
+            <state relative-caret-position="350">
+              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1449#1450#0" expanded="true" />
+                <element signature="e#1479#1480#0" expanded="true" />
+                <element signature="e#1533#1534#0" expanded="true" />
+                <element signature="e#1571#1572#0" expanded="true" />
+                <element signature="e#1612#1613#0" expanded="true" />
+                <element signature="e#1644#1645#0" expanded="true" />
+                <element signature="e#1699#1700#0" expanded="true" />
+                <element signature="e#1741#1742#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dal/src/main/resources/META-INF/persistence.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelpBE.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/HelpBE.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameRest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/GameRest.java">
+      <file leaf-file-name="QuestionRest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/QuestionRest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="350">
-              <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelpEnum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/HelpEnum.java">
+      <file leaf-file-name="QuestionService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/services/QuestionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-              <folding />
+            <state relative-caret-position="342">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,11 +114,9 @@
       <file leaf-file-name="GameService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/services/GameService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="29" column="73" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="73" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,33 +124,62 @@
       <file leaf-file-name="QuestionBE.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/QuestionBE.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="37" column="25" lean-forward="false" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+            <state relative-caret-position="224">
+              <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2141#2142#0" expanded="true" />
+                <element signature="e#2194#2195#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserBE.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserBE.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/UserBE.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="53" column="32" lean-forward="false" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+            <state relative-caret-position="206">
+              <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+              <folding>
+                <element signature="e#1193#1194#0" expanded="true" />
+                <element signature="e#1233#1234#0" expanded="true" />
+                <element signature="e#1568#1569#0" expanded="true" />
+                <element signature="e#1593#1594#0" expanded="true" />
+                <element signature="e#1631#1632#0" expanded="true" />
+                <element signature="e#1659#1660#0" expanded="true" />
+                <element signature="e#1709#1710#0" expanded="true" />
+                <element signature="e#1745#1746#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionRepo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/QuestionRepo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/GameRepo.java">
+      <file leaf-file-name="game.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/game/game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="66" column="80" lean-forward="false" selection-start-line="66" selection-start-column="80" selection-end-line="66" selection-end-column="80" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="162">
+              <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/game/game.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -206,7 +216,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wsgui/src/main/webapp/login_registration/login_registration.html" />
         <option value="$PROJECT_DIR$/dbscripts/pom.xml" />
         <option value="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/User.java" />
         <option value="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/GenericRepo.java" />
@@ -221,7 +230,6 @@
         <option value="$PROJECT_DIR$/dal/pom.xml" />
         <option value="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/BaseEntity.java" />
         <option value="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/BaseEntity.java" />
-        <option value="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/UserBE.java" />
         <option value="$PROJECT_DIR$/dbscripts/src/main/resources/run.sh" />
         <option value="$PROJECT_DIR$/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/UserRest.java" />
         <option value="$PROJECT_DIR$/wsgui/pom.xml" />
@@ -241,22 +249,24 @@
         <option value="$PROJECT_DIR$/wsgui/src/main/webapp/login/registartion.html" />
         <option value="$PROJECT_DIR$/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/filter/HomePageFilter.java" />
         <option value="$PROJECT_DIR$/wsgui/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/wsgui/src/main/webapp/home/home.html" />
         <option value="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/UserRepo.java" />
-        <option value="$PROJECT_DIR$/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/QuestionRest.java" />
-        <option value="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/QuestionBE.java" />
         <option value="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/HelpEnum.java" />
         <option value="$PROJECT_DIR$/dbscripts/src/main/resources/insert_data.sql" />
         <option value="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/HelpBE.java" />
-        <option value="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/QuestionRepo.java" />
-        <option value="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/GameBE.java" />
-        <option value="$PROJECT_DIR$/wsgui/src/main/webapp/game/game.js" />
         <option value="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/AnswerBE.java" />
-        <option value="$PROJECT_DIR$/wsgui/src/main/webapp/game/game.html" />
         <option value="$PROJECT_DIR$/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/GameRest.java" />
         <option value="$PROJECT_DIR$/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/services/GameService.java" />
         <option value="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/GameRepo.java" />
         <option value="$PROJECT_DIR$/dal/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/wsgui/src/main/webapp/home/home.html" />
+        <option value="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/QuestionBE.java" />
+        <option value="$PROJECT_DIR$/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/QuestionRest.java" />
+        <option value="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/UserBE.java" />
+        <option value="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/GameBE.java" />
+        <option value="$PROJECT_DIR$/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/services/QuestionService.java" />
+        <option value="$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/QuestionRepo.java" />
+        <option value="$PROJECT_DIR$/wsgui/src/main/webapp/game/game.html" />
+        <option value="$PROJECT_DIR$/wsgui/src/main/webapp/game/game.js" />
       </list>
     </option>
   </component>
@@ -322,6 +332,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -721,9 +732,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1070,6 +1080,7 @@
       <workItem from="1508250051697" duration="6514000" />
       <workItem from="1508340131773" duration="2790000" />
       <workItem from="1508343186124" duration="4905000" />
+      <workItem from="1508429445697" duration="5731000" />
     </task>
     <servers />
   </component>
@@ -1103,7 +1114,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32898000" />
+    <option name="totallyTimeSpent" value="38629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
@@ -1121,7 +1132,7 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3935484" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3935484" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1132,7 +1143,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35268816" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2642344" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26755112" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1153,18 +1164,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="76" />
+      <option name="time" value="94" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bibliavetelkedo.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/BaseEntity.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1281,14 +1285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1316,7 +1312,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1332,7 +1327,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1340,7 +1334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1348,35 +1341,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/login/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/QuestionRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/QuestionRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1396,41 +1360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/game/game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/game/game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/UserRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="94" column="20" lean-forward="false" selection-start-line="81" selection-start-column="8" selection-end-line="94" selection-end-column="20" />
-          <folding>
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/services/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -1439,67 +1368,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/GameRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/services/GameService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/GameRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="66" column="80" lean-forward="false" selection-start-line="66" selection-start-column="80" selection-end-line="66" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dal/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/AnswerBE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/GameBE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/HelpBE.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
+        <state relative-caret-position="342">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1515,20 +1394,155 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/login/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/GameRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/GameRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="66" column="80" lean-forward="false" selection-start-line="66" selection-start-column="80" selection-end-line="66" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/UserRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="83" column="12" lean-forward="false" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/services/GameService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="29" column="73" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/QuestionBE.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="37" column="25" lean-forward="false" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+        <state relative-caret-position="224">
+          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2141#2142#0" expanded="true" />
+            <element signature="e#2194#2195#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/UserBE.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="53" column="32" lean-forward="false" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+        <state relative-caret-position="206">
+          <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+          <folding>
+            <element signature="e#1193#1194#0" expanded="true" />
+            <element signature="e#1233#1234#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1593#1594#0" expanded="true" />
+            <element signature="e#1631#1632#0" expanded="true" />
+            <element signature="e#1659#1660#0" expanded="true" />
+            <element signature="e#1709#1710#0" expanded="true" />
+            <element signature="e#1745#1746#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/AnswerBE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/QuestionRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/GameBE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1449#1450#0" expanded="true" />
+            <element signature="e#1479#1480#0" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
+            <element signature="e#1571#1572#0" expanded="true" />
+            <element signature="e#1612#1613#0" expanded="true" />
+            <element signature="e#1644#1645#0" expanded="true" />
+            <element signature="e#1699#1700#0" expanded="true" />
+            <element signature="e#1741#1742#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/services/QuestionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/QuestionRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/game/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgui/src/main/webapp/game/game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding />
         </state>
       </provider>

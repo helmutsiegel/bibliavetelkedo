@@ -2,3 +2,4 @@ org/empit/bibliavetelkedo/servicelayer/convert/UserConverter.class
 org/empit/bibliavetelkedo/servicelayer/services/UserService.class
 org/empit/bibliavetelkedo/servicelayer/dto/UserDTO.class
 org/empit/bibliavetelkedo/servicelayer/services/GameService.class
+org/empit/bibliavetelkedo/servicelayer/services/QuestionService.class

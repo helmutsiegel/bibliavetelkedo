@@ -2,7 +2,9 @@ package org.empit.bibliavetelkedo.dal.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Entity(name = "GameBE")
 @Table(name = "Game")
@@ -19,6 +21,9 @@ public class GameBE implements Serializable {
     @JoinColumn(name = "userid")
     private UserBE userBE;
 
+    @OneToMany(mappedBy = "game", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<AnswerBE> answers;
+
     @ManyToMany
     @JoinTable(
             name = "Used_help",
@@ -31,7 +36,7 @@ public class GameBE implements Serializable {
         this.id = id;
     }
 
-    public GameBE(){
+    public GameBE() {
 
     }
 
@@ -57,5 +62,25 @@ public class GameBE implements Serializable {
 
     public void setUserBE(UserBE userBE) {
         this.userBE = userBE;
+    }
+
+    public List<AnswerBE> getAnswers() {
+        return answers;
+    }
+
+    public void setAnswers(List<AnswerBE> answers) {
+        this.answers = answers;
+    }
+
+    public Set<HelpBE> getUsedHelps() {
+        return usedHelps;
+    }
+
+    public void setUsedHelps(Set<HelpBE> usedHelps) {
+        this.usedHelps = usedHelps;
+    }
+
+    public List<QuestionBE> getQuestions() {
+        return this.answers.stream().map(a -> a.getQuestion()).collect(Collectors.toList());
     }
 }

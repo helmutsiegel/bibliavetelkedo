@@ -4,6 +4,7 @@ package org.empit.bibliavetelkedo.dal.entity;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity(name = "UserBE")
 @Table(name = "User")
@@ -26,6 +27,9 @@ public class UserBE implements Serializable{
 
     @Column(name = "password")
     private String password;
+
+    @OneToMany(mappedBy = "userBE", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<GameBE> games;
 
     public UserBE(Long id) {
         this.id = id;
@@ -69,5 +73,17 @@ public class UserBE implements Serializable{
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public List<GameBE> getGames() {
+        return games;
+    }
+
+    public void setGames(List<GameBE> modules) {
+        this.games = modules;
     }
 }

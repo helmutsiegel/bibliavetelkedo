@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
     <script src="common/common.js"></script>
-    <script src="game/game.js"></script>
 </head>
-<body onload="getGame()">
+<body onload="getNextQuestion()">
 
+<h3 id="question" align="center" data-bind="html: question()"></h3>
+<br>
+<form>
+    <div class="container">
+        <button type="button" data-bind="html: answer_a()" onclick="answer(this)"></button>
+        <button type="button" data-bind="html: answer_b()" onclick="answer(this)"></button>
+        <button type="button" data-bind="html: answer_c()" onclick="answer(this)"></button>
+        <button type="button" data-bind="html: answer_d()" onclick="answer(this)"></button>
+    </div>
+</form>
 </body>
+<script src="binding/knockout-3.4.2.js"></script>
+<script src="binding/knockout.mapping-2.4.1.js"></script>
+<script src="game/game.js"></script>
 </html>
