@@ -26,11 +26,17 @@ public class GameRest {
     }
 
     @GET
-    @Path("/getgame")
+    @Path("/startgame")
     @Produces("application/json")
-    public GameBE getGame(@QueryParam("username") String username) {
+    public String getGame(@QueryParam("username") String username) {
 
         GameService instance = GameService.getInstance();
-        return instance.getGame(username);
+        try {
+            instance.getGame(username);
+            return "{\"answer\": \"true\"}";
+
+        } catch (Exception e) {
+            return "{\"answer\": \"false\"}";
+        }
     }
 }
