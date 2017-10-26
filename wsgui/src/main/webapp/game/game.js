@@ -3,7 +3,8 @@ var obj = {
     answer_a: ko.observable(''),
     answer_b: ko.observable(''),
     answer_c: ko.observable(''),
-    answer_d: ko.observable('')
+    answer_d: ko.observable(''),
+    qid: null
 
 };
 
@@ -19,6 +20,7 @@ function getNextQuestion() {
             obj.answer_b(response.answerB);
             obj.answer_c(response.answerC);
             obj.answer_d(response.answerD);
+            obj.qid = response.id;
         }
     };
 
@@ -28,7 +30,15 @@ function getNextQuestion() {
 }
 
 
+function answer(ans) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
 
-function answer(ans){
+        }
+    };
 
+    xhttp.open("GET", "rest/questions/answer?username=" + getCookie("username")
+        + "&qid=" + obj.qid + "&answer=" + ans, true);
+    xhttp.send();
 }

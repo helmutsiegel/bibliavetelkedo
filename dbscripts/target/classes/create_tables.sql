@@ -48,7 +48,7 @@ CREATE TABLE `Answer` (
   `questionId`     INT REFERENCES `Question`.`id`,
   CONSTRAINT `question_f`
   FOREIGN KEY (`questionId`)
-  REFERENCES `User` (`id`),
+  REFERENCES `Question` (`id`),
 
   `answer` VARCHAR(45),
   PRIMARY KEY (`id`)

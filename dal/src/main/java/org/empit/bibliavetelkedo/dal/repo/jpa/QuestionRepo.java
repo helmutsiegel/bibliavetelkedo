@@ -7,9 +7,8 @@ import org.empit.bibliavetelkedo.dal.repo.GenericRepo;
 
 import javax.persistence.Persistence;
 import javax.persistence.Query;
-import java.util.List;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class QuestionRepo extends GenericRepo<QuestionBE> {
 
@@ -33,6 +32,20 @@ public class QuestionRepo extends GenericRepo<QuestionBE> {
 
 
     public QuestionBE getById(Long id) {
+        try {
+            em.clear();
+            Query query = em.createQuery("SELECT e FROM QuestionBE e where e.id = :id");
+            query.setParameter("id", id);
+            List<QuestionBE> result = (List<QuestionBE>) query.getResultList();
+            if (result == null || result.size() == 0) {
+                return null;
+            }
+            return result.get(0);
+        } catch (JPQLException e) {
+            //throw new RepositoryException();
+        } catch (IllegalArgumentException e) {
+            //throw new RepositoryException();
+        }
         return null;
     }
 
@@ -49,17 +62,19 @@ public class QuestionRepo extends GenericRepo<QuestionBE> {
         return null;
     }
 
-    public QuestionBE getNext(List<QuestionBE> questions){
+    public QuestionBE getNext(List<QuestionBE> questions) {
         try {
+            em.clear();
             List<QuestionBE> resultList = null;
-            if(questions.isEmpty()){
+            if (questions.isEmpty()) {
                 resultList = this.getAll();
-            }else {
-                Query query = em.createQuery("SELECT e FROM QuestionBE e where e NOT IN :list");
-                query.setParameter("list", questions);
+            } else {
+                Set<Long> questionSet = questions.stream().map(e -> e.getId()).collect(Collectors.toSet());
+                Query query = em.createQuery("SELECT e FROM QuestionBE e where e.id NOT IN :list");
+                query.setParameter("list", questionSet);
                 resultList = query.getResultList();
             }
-                int index = randomGenerator.nextInt(resultList.size());
+            int index = randomGenerator.nextInt(resultList.size());
             return resultList.get(index);
 
         } catch (JPQLException e) {

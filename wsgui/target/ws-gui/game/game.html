@@ -13,10 +13,10 @@
 <br>
 <form>
     <div class="container">
-        <button type="button" data-bind="html: answer_a()" onclick="answer(this)"></button>
-        <button type="button" data-bind="html: answer_b()" onclick="answer(this)"></button>
-        <button type="button" data-bind="html: answer_c()" onclick="answer(this)"></button>
-        <button type="button" data-bind="html: answer_d()" onclick="answer(this)"></button>
+        <button type="button" data-bind="html: answer_a()" onclick="answer(this.innerHTML)"></button>
+        <button type="button" data-bind="html: answer_b()" onclick="answer(this.innerHTML)"></button>
+        <button type="button" data-bind="html: answer_c()" onclick="answer(this.innerHTML)"></button>
+        <button type="button" data-bind="html: answer_d()" onclick="answer(this.innerHTML)"></button>
     </div>
 </form>
 </body>

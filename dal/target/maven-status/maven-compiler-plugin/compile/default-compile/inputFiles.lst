@@ -5,6 +5,7 @@
 /media/helmut/Data2/Programming/bibliavetelkedo/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/GameBE.java
 /media/helmut/Data2/Programming/bibliavetelkedo/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/AnswerBE.java
 /media/helmut/Data2/Programming/bibliavetelkedo/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/GenericRepo.java
+/media/helmut/Data2/Programming/bibliavetelkedo/dal/src/main/java/org/empit/bibliavetelkedo/dal/repo/jpa/AnswerRepo.java
 /media/helmut/Data2/Programming/bibliavetelkedo/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/UserBE.java
 /media/helmut/Data2/Programming/bibliavetelkedo/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/QuestionBE.java
 /media/helmut/Data2/Programming/bibliavetelkedo/dal/src/main/java/org/empit/bibliavetelkedo/dal/entity/HelpEnum.java

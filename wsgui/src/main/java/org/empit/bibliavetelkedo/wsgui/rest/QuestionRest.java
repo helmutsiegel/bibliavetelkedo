@@ -4,6 +4,7 @@ import org.empit.bibliavetelkedo.dal.entity.QuestionBE;
 import org.empit.bibliavetelkedo.dal.entity.UserBE;
 import org.empit.bibliavetelkedo.dal.repo.jpa.QuestionRepo;
 import org.empit.bibliavetelkedo.dal.repo.jpa.UserRepo;
+import org.empit.bibliavetelkedo.servicelayer.dto.QuestionDTO;
 import org.empit.bibliavetelkedo.servicelayer.services.QuestionService;
 
 import javax.ws.rs.GET;
@@ -31,9 +32,21 @@ public class QuestionRest {
     @GET
     @Path("/getnext")
     @Produces("application/json")
-    public QuestionBE getNext(@QueryParam("username") String username) {
+    public QuestionDTO getNext(@QueryParam("username") String username) {
 
         QuestionService instance = QuestionService.getInstance();
         return instance.getNext(username);
+    }
+
+    @GET
+    @Path("/answer")
+    @Produces("application/json")
+    public boolean answer(@QueryParam("username") String username,
+                          @QueryParam("qid") Long qid,
+                          @QueryParam("answer") String answer) {
+
+        QuestionService instance = QuestionService.getInstance();
+        instance.answer(username, qid, answer);
+        return true;
     }
 }
