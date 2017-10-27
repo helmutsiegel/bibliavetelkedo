@@ -13,10 +13,19 @@
 <br>
 <form>
     <div class="container">
-        <button type="button" data-bind="html: answer_a()" onclick="answer(this.innerHTML)"></button>
-        <button type="button" data-bind="html: answer_b()" onclick="answer(this.innerHTML)"></button>
-        <button type="button" data-bind="html: answer_c()" onclick="answer(this.innerHTML)"></button>
-        <button type="button" data-bind="html: answer_d()" onclick="answer(this.innerHTML)"></button>
+        <button id="a" type="button" data-bind="html: answer_a()" onclick="answer(this.innerHTML)"></button>
+        <button id="b" type="button" data-bind="html: answer_b()" onclick="answer(this.innerHTML)"></button>
+        <button id="c" type="button" data-bind="html: answer_c()" onclick="answer(this.innerHTML)"></button>
+        <button id="d" type="button" data-bind="html: answer_d()" onclick="answer(this.innerHTML)"></button>
+
+        <table>
+            <tr>
+                <td><button type="button" class="myButton" data-bind="enable: felez" onclick="felez()">50:50</button></td>
+                <td><button type="button" class="myButton" data-bind="enable: kov" onclick="kovetkezo()">
+                    <span class="glyphicon glyphicon-forward"></span>
+                </button></td>
+            </tr>
+        </table>
     </div>
 </form>
 </body>

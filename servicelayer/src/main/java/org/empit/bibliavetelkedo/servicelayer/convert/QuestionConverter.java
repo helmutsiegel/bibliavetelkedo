@@ -13,6 +13,9 @@ public class QuestionConverter {
         questionDTO.setAnswerB(questionBE.getAnswerB());
         questionDTO.setAnswerC(questionBE.getAnswerC());
         questionDTO.setAnswerD(questionBE.getAnswerD());
+        questionDTO.setCanHalf(true);
+        questionDTO.setCanFault(true);
+        questionDTO.setCanNext(true);
         return questionDTO;
     }
 }

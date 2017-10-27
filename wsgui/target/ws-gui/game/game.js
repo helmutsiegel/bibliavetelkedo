@@ -4,7 +4,10 @@ var obj = {
     answer_b: ko.observable(''),
     answer_c: ko.observable(''),
     answer_d: ko.observable(''),
-    qid: null
+    qid: null,
+    kov: ko.observable(false),
+    felez: ko.observable(false),
+    hibaz: ko.observable(false)
 
 };
 
@@ -21,6 +24,14 @@ function getNextQuestion() {
             obj.answer_c(response.answerC);
             obj.answer_d(response.answerD);
             obj.qid = response.id;
+            obj.felez(response.canHalf);
+            obj.kov(response.canNext);
+            obj.hibaz(response.canFault);
+
+            document.getElementById("a").disabled = false;
+            document.getElementById("b").disabled = false;
+            document.getElementById("c").disabled = false;
+            document.getElementById("d").disabled = false;
         }
     };
 
@@ -32,13 +43,57 @@ function getNextQuestion() {
 
 function answer(ans) {
     var xhttp = new XMLHttpRequest();
+    var me = this;
     xhttp.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
-
+            me.getNextQuestion();
         }
     };
 
     xhttp.open("GET", "rest/questions/answer?username=" + getCookie("username")
         + "&qid=" + obj.qid + "&answer=" + ans, true);
     xhttp.send();
+}
+
+function felez() {
+    if (obj.felez() === true) {
+        var xhttp = new XMLHttpRequest();
+        var me = this;
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                var resp = JSON.parse(xhttp.responseText);
+                var buttons = document.getElementsByTagName('button');
+                for (var i = 0; i < buttons.length; i++) {
+                    var button = buttons[i];
+                    if (button.innerHTML == resp[0] || button.innerHTML == resp[1]) {
+                        button.disabled = true;
+                    }
+                    obj.felez(false);
+                }
+            }
+        };
+
+        xhttp.open("GET", "rest/questions/halfing?username=" + getCookie("username")
+            + "&qid=" + obj.qid, true);
+        xhttp.send();
+    }
+}
+
+function kovetkezo() {
+    if (obj.kov() === true) {
+        var xhttp = new XMLHttpRequest();
+        var me = this;
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                var resp = JSON.parse(xhttp.responseText)
+                if (resp == true || resp == "true") {
+                    obj.kov(false);
+                    me.getNextQuestion();
+                }
+            }
+        };
+        xhttp.open("GET", "rest/questions/nexting?username=" + getCookie("username")
+            + "&qid=" + obj.qid, true);
+        xhttp.send();
+    }
 }

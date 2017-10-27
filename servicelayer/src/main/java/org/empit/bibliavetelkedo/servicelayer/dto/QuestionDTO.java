@@ -25,6 +25,15 @@ public class QuestionDTO implements Serializable {
     @JsonProperty("answerD")
     private String answerD;
 
+    @JsonProperty("canNext")
+    private boolean canNext;
+
+    @JsonProperty("canHalf")
+    private boolean canHalf;
+
+    @JsonProperty("canFault")
+    private boolean canFault;
+
     public Long getId() {
         return id;
     }
@@ -71,5 +80,29 @@ public class QuestionDTO implements Serializable {
 
     public void setAnswerD(String answerD) {
         this.answerD = answerD;
+    }
+
+    public boolean isCanNext() {
+        return canNext;
+    }
+
+    public void setCanNext(boolean canNext) {
+        this.canNext = canNext;
+    }
+
+    public boolean isCanHalf() {
+        return canHalf;
+    }
+
+    public void setCanHalf(boolean canHalf) {
+        this.canHalf = canHalf;
+    }
+
+    public boolean isCanFault() {
+        return canFault;
+    }
+
+    public void setCanFault(boolean canFault) {
+        this.canFault = canFault;
     }
 }

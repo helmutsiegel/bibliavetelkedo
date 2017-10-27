@@ -1,11 +1,12 @@
+org/empit/bibliavetelkedo/dal/entity/UserBE.class
+org/empit/bibliavetelkedo/dal/repo/jpa/HelpRepo.class
+org/empit/bibliavetelkedo/dal/repo/jpa/UserRepo.class
+org/empit/bibliavetelkedo/dal/entity/HelpEnum.class
 org/empit/bibliavetelkedo/dal/repo/GenericRepo.class
 org/empit/bibliavetelkedo/dal/repo/jpa/GameRepo.class
 org/empit/bibliavetelkedo/dal/entity/AnswerBE.class
 org/empit/bibliavetelkedo/dal/entity/QuestionBE.class
-org/empit/bibliavetelkedo/dal/entity/UserBE.class
 org/empit/bibliavetelkedo/dal/entity/GameBE.class
 org/empit/bibliavetelkedo/dal/repo/jpa/QuestionRepo.class
 org/empit/bibliavetelkedo/dal/repo/jpa/AnswerRepo.class
 org/empit/bibliavetelkedo/dal/entity/HelpBE.class
-org/empit/bibliavetelkedo/dal/repo/jpa/UserRepo.class
-org/empit/bibliavetelkedo/dal/entity/HelpEnum.class

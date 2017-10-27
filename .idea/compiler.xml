@@ -16,7 +16,7 @@
       <module name="bibliavetelkedo" target="1.5" />
       <module name="dal" target="1.8" />
       <module name="dbscripts" target="1.5" />
-      <module name="servicelayer" target="1.5" />
+      <module name="servicelayer" target="1.8" />
       <module name="wsgui" target="1.5" />
     </bytecodeTargetLevel>
   </component>

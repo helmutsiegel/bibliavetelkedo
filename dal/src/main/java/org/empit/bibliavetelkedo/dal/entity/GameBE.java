@@ -27,8 +27,8 @@ public class GameBE implements Serializable {
     @ManyToMany
     @JoinTable(
             name = "Used_help",
-            joinColumns = @JoinColumn(name = "helpid", referencedColumnName = "id"),
-            inverseJoinColumns = @JoinColumn(name = "gameid", referencedColumnName = "id"))
+            joinColumns = @JoinColumn(name = "gameId", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "helpId", referencedColumnName = "id"))
     private Set<HelpBE> usedHelps;
 
 

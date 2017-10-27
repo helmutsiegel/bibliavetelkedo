@@ -49,4 +49,23 @@ public class QuestionRest {
         instance.answer(username, qid, answer);
         return true;
     }
+
+    @GET
+    @Path("/halfing")
+    @Produces("application/json")
+    public List<String> halfing(@QueryParam("username") String username,
+                                @QueryParam("qid") Long qid) {
+        QuestionService instance = QuestionService.getInstance();
+        return instance.halfing(username, qid);
+    }
+
+    @GET
+    @Path("/nexting")
+    @Produces("application/json")
+    public boolean nexting(@QueryParam("username") String username,
+                           @QueryParam("qid") Long qid) {
+        QuestionService instance = QuestionService.getInstance();
+        return instance.nexting(username, qid);
+    }
+
 }

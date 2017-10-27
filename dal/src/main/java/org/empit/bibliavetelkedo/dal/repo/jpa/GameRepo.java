@@ -63,6 +63,7 @@ public class GameRepo extends GenericRepo<GameBE> {
 
     public GameBE getByUsername(String username) {
         try {
+            em.clear();
             Query query = em.createQuery("SELECT e FROM GameBE e where e.userBE.username like :username")
                     .setHint(QueryHints.CACHE_USAGE, CacheUsage.DoNotCheckCache);
             query.setParameter("username", username);
