@@ -89,13 +89,18 @@
     </servlet-mapping>
 
     <filter>
-        <filter-name>HomePageFilter</filter-name>
-        <filter-class>org.empit.bibliavetelkedo.wsgui.filter.HomePageFilter</filter-class>
+        <filter-name>LoggedInFilter</filter-name>
+        <filter-class>org.empit.bibliavetelkedo.wsgui.filter.LoggedInFilter</filter-class>
     </filter>
 
     <filter-mapping>
-        <filter-name>HomePageFilter</filter-name>
+        <filter-name>LoggedInFilter</filter-name>
         <servlet-name>Home</servlet-name>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>LoggedInFilter</filter-name>
+        <servlet-name>Game</servlet-name>
     </filter-mapping>
 
     <servlet>

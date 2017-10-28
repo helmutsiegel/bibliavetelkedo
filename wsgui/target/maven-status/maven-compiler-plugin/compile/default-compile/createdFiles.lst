@@ -3,6 +3,7 @@ org/empit/bibliavetelkedo/wsgui/rest/LoginRest.class
 org/empit/bibliavetelkedo/wsgui/servlet/LogoutServlet.class
 org/empit/bibliavetelkedo/wsgui/filter/LoginFilter.class
 org/empit/bibliavetelkedo/wsgui/rest/RegistartionRest.class
+org/empit/bibliavetelkedo/wsgui/filter/LoggedInFilter.class
 org/empit/bibliavetelkedo/wsgui/rest/UserRest.class
-org/empit/bibliavetelkedo/wsgui/filter/HomePageFilter.class
+org/empit/bibliavetelkedo/wsgui/rest/ResultRest.class
 org/empit/bibliavetelkedo/wsgui/rest/GameRest.class

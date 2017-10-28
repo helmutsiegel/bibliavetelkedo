@@ -33,6 +33,7 @@ public class GameRepo extends GenericRepo<GameBE> {
     @Override
     public List<GameBE> getAll() {
         try {
+            em.clear();
             Query query = em.createQuery("SELECT e FROM GameBE e");
             return (List<GameBE>) query.getResultList();
 

@@ -8,18 +8,29 @@
     <script src="common/common.js"></script>
 </head>
 <body onload="getNextQuestion()">
-<h4 data-bind="visible: canContinue()">Szint: <span data-bind="html: level()"></span></h4>
-<h4 data-bind="visible: canContinue()"><span
-        data-bind="text: hibaz() == true ? 'Hibázhatsz egyet.' : 'Nem hibázhatsz többet!'"></span></h4>
-<div class="container">
-    <h3 id="question" align="center">
-        <span data-bind="html: canContinue() == true ? question() : 'A játéknak vége!'"></span>
-    </h3>
-</div>
-<h3 id="levelMessage" align="center" data-bind="visible: canContinue() == false">
-    <span data-bind="text: level()"></span> szintet sikerült teljesítened.
-</h3>
-<br>
+<form>
+    <div class="container" data-bind="visible: canContinue()">
+
+        <h3 data-bind="visible: canContinue()">Szint: <span
+                data-bind="html: level()"></span></h3>
+
+        <h3 data-bind="visible: canContinue(), style: { color: hibaz() == true ? 'green' : 'red' }"><span
+                data-bind="text: hibaz() == true ? 'Hibázhatsz egyet.' : 'Nem hibázhatsz többet!'"></span></h3>
+    </div>
+
+    <div class="container">
+        <h3 id="question" align="center">
+            <span data-bind="html: canContinue() == true ? question() : 'A játéknak vége!'"></span>
+        </h3>
+
+        <h3 id="levelMessage" align="center" data-bind="visible: canContinue() == false">
+            <span data-bind="text: level()"></span> szintet sikerült teljesítened.
+        </h3>
+    </div>
+
+</form>
+
+
 <form data-bind="visible: canContinue()">
     <div class="container">
         <button id="a" type="button" data-bind="html: answer_a()" onclick="answer(this.innerHTML)"></button>

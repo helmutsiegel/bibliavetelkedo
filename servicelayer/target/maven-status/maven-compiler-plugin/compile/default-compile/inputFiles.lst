@@ -1,5 +1,6 @@
 /media/helmut/Data2/Programming/bibliavetelkedo/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/services/UserService.java
 /media/helmut/Data2/Programming/bibliavetelkedo/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/dto/QuestionDTO.java
+/media/helmut/Data2/Programming/bibliavetelkedo/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/dto/ResultDTO.java
 /media/helmut/Data2/Programming/bibliavetelkedo/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/convert/QuestionConverter.java
 /media/helmut/Data2/Programming/bibliavetelkedo/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/convert/UserConverter.java
 /media/helmut/Data2/Programming/bibliavetelkedo/servicelayer/src/main/java/org/empit/bibliavetelkedo/servicelayer/dto/RegistartionResponseDTO.java

@@ -15,7 +15,7 @@ public class LogoutServlet extends HttpServlet {
             cookie.setMaxAge(-1);
         }
         request.getSession().invalidate();
-        response.sendRedirect("Login");
+        response.sendRedirect("");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -27,6 +27,6 @@ public class LogoutServlet extends HttpServlet {
             }
         }
         request.getSession().invalidate();
-        response.sendRedirect("Login");
+        response.sendRedirect("");
     }
 }

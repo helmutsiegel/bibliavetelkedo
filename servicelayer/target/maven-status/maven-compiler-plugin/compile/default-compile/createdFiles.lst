@@ -1,5 +1,6 @@
 org/empit/bibliavetelkedo/servicelayer/dto/RegistartionResponseDTO.class
 org/empit/bibliavetelkedo/servicelayer/convert/UserConverter.class
+org/empit/bibliavetelkedo/servicelayer/dto/ResultDTO.class
 org/empit/bibliavetelkedo/servicelayer/services/UserService.class
 org/empit/bibliavetelkedo/servicelayer/dto/UserDTO.class
 org/empit/bibliavetelkedo/servicelayer/convert/QuestionConverter.class

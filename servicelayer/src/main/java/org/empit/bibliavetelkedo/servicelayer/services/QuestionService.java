@@ -42,7 +42,7 @@ public class QuestionService {
         QuestionDTO resp = QuestionConverter.fromBEToDTO(questionRepo.getNext(gameBE.getQuestions()));
         resp.setLevel((long) gameBE.getCorrectAnswers().size() + 1);
 
-        if (incorrects[0] > 1 || gameBE.getAnswers().size() == 10) {
+        if (incorrects[0] > 1 || gameBE.getCorrectAnswers().size() == 10) {
             resp.setCanContinue(false);
             resp.setLevel((long) gameBE.getCorrectAnswers().size());
         }
