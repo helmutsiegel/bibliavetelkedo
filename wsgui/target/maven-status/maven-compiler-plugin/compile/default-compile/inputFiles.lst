@@ -3,5 +3,6 @@
 /media/helmut/Data2/Programming/bibliavetelkedo/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/GameRest.java
 /media/helmut/Data2/Programming/bibliavetelkedo/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/filter/LoginFilter.java
 /media/helmut/Data2/Programming/bibliavetelkedo/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/UserRest.java
+/media/helmut/Data2/Programming/bibliavetelkedo/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/servlet/LogoutServlet.java
 /media/helmut/Data2/Programming/bibliavetelkedo/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/filter/HomePageFilter.java
 /media/helmut/Data2/Programming/bibliavetelkedo/wsgui/src/main/java/org/empit/bibliavetelkedo/wsgui/rest/LoginRest.java

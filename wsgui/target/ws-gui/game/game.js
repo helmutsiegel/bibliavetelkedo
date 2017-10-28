@@ -7,7 +7,9 @@ var obj = {
     qid: null,
     kov: ko.observable(false),
     felez: ko.observable(false),
-    hibaz: ko.observable(false)
+    hibaz: ko.observable(false),
+    level: ko.observable(0),
+    canContinue: ko.observable(false)
 
 };
 
@@ -18,6 +20,8 @@ function getNextQuestion() {
     xhttp.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
             var response = JSON.parse(this.responseText);
+
+            obj.canContinue(response.canContinue);
             obj.question(response.question);
             obj.answer_a(response.answerA);
             obj.answer_b(response.answerB);
@@ -27,11 +31,13 @@ function getNextQuestion() {
             obj.felez(response.canHalf);
             obj.kov(response.canNext);
             obj.hibaz(response.canFault);
+            obj.level(response.level);
 
             document.getElementById("a").disabled = false;
             document.getElementById("b").disabled = false;
             document.getElementById("c").disabled = false;
             document.getElementById("d").disabled = false;
+
         }
     };
 
@@ -40,12 +46,12 @@ function getNextQuestion() {
 
 }
 
-
 function answer(ans) {
     var xhttp = new XMLHttpRequest();
     var me = this;
     xhttp.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
+            var resp = JSON.parse(xhttp.responseText)
             me.getNextQuestion();
         }
     };

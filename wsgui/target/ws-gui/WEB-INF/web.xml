@@ -59,6 +59,14 @@
         <url-pattern>/Registration</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>org.empit.bibliavetelkedo.wsgui.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
 
     <servlet>
         <servlet-name>Home</servlet-name>
@@ -68,6 +76,16 @@
     <servlet-mapping>
         <servlet-name>Home</servlet-name>
         <url-pattern>/Home</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegSuccessfull</servlet-name>
+        <jsp-file>login/RegistartionSuccessfull.html</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegSuccessfull</servlet-name>
+        <url-pattern>/RegSuccessfull</url-pattern>
     </servlet-mapping>
 
     <filter>

@@ -1,5 +1,6 @@
 org/empit/bibliavetelkedo/wsgui/rest/QuestionRest.class
 org/empit/bibliavetelkedo/wsgui/rest/LoginRest.class
+org/empit/bibliavetelkedo/wsgui/servlet/LogoutServlet.class
 org/empit/bibliavetelkedo/wsgui/filter/LoginFilter.class
 org/empit/bibliavetelkedo/wsgui/rest/RegistartionRest.class
 org/empit/bibliavetelkedo/wsgui/rest/UserRest.class

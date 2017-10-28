@@ -33,7 +33,19 @@ public class QuestionService {
         UserBE byUsername = instance.getByUsername(username);
         List<GameBE> games = byUsername.getGames();
         GameBE gameBE = games.get(0);
+        final int[] incorrects = {0};
+        gameBE.getAnswers().forEach(a -> {
+            if (!a.getAnswer().equals(a.getQuestion().getCorrectAnswer())) {
+                incorrects[0]++;
+            }
+        });
         QuestionDTO resp = QuestionConverter.fromBEToDTO(questionRepo.getNext(gameBE.getQuestions()));
+        resp.setLevel((long) gameBE.getCorrectAnswers().size() + 1);
+
+        if (incorrects[0] > 1 || gameBE.getAnswers().size() == 10) {
+            resp.setCanContinue(false);
+            resp.setLevel((long) gameBE.getCorrectAnswers().size());
+        }
         if (gameBE.getUsedHelps().parallelStream().anyMatch(e -> e.getHelp() == HelpEnum.HALVING)) {
             resp.setCanHalf(false);
         }
@@ -43,18 +55,30 @@ public class QuestionService {
         if (gameBE.getUsedHelps().parallelStream().anyMatch(e -> e.getHelp() == HelpEnum.INCORRECT)) {
             resp.setCanFault(false);
         }
+
         return resp;
+
     }
 
     public boolean answer(String username, Long qid, String answer) {
-        GameBE gameBE = GameRepo.getInstance().getByUsername(username);
+        boolean resp = true;
+        GameRepo gameRepo = GameRepo.getInstance();
+        GameBE gameBE = gameRepo.getByUsername(username);
         QuestionBE questionBE = QuestionRepo.getInstance().getById(qid);
         AnswerBE answerBE = new AnswerBE();
         answerBE.setAnswer(answer);
         answerBE.setQuestion(questionBE);
         answerBE.setGame(gameBE);
+        if (!answer.equals(questionBE.getCorrectAnswer())) {
+            if (gameBE.getUsedHelps().parallelStream().anyMatch(e -> e.getHelp() == HelpEnum.INCORRECT)) {
+                resp = false;
+            } else {
+                gameBE.getUsedHelps().add(HelpRepo.getInstance().getByEnum(HelpEnum.INCORRECT));
+                gameRepo.save(gameBE);
+            }
+        }
         AnswerRepo.getInstance().insert(answerBE);
-        return true;
+        return resp;
     }
 
     public List<String> halfing(String username, Long qid) {

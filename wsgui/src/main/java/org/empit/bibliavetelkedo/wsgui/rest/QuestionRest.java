@@ -46,8 +46,8 @@ public class QuestionRest {
                           @QueryParam("answer") String answer) {
 
         QuestionService instance = QuestionService.getInstance();
-        instance.answer(username, qid, answer);
-        return true;
+        return instance.answer(username, qid, answer);
+
     }
 
     @GET

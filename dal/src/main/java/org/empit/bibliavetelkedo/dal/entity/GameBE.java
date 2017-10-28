@@ -21,7 +21,7 @@ public class GameBE implements Serializable {
     @JoinColumn(name = "userid")
     private UserBE userBE;
 
-    @OneToMany(mappedBy = "game", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval=true)
+    @OneToMany(mappedBy = "game", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<AnswerBE> answers;
 
     @ManyToMany
@@ -67,6 +67,13 @@ public class GameBE implements Serializable {
     public List<AnswerBE> getAnswers() {
         return answers;
     }
+
+    public List<AnswerBE> getCorrectAnswers() {
+        return this.getAnswers().stream()
+                .filter(a -> a.getQuestion().getCorrectAnswer().equals(a.getAnswer()))
+                .collect(Collectors.toList());
+    }
+
 
     public void setAnswers(List<AnswerBE> answers) {
         this.answers = answers;

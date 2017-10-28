@@ -8,10 +8,19 @@
     <script src="common/common.js"></script>
 </head>
 <body onload="getNextQuestion()">
-
-<h3 id="question" align="center" data-bind="html: question()"></h3>
+<h4 data-bind="visible: canContinue()">Szint: <span data-bind="html: level()"></span></h4>
+<h4 data-bind="visible: canContinue()"><span
+        data-bind="text: hibaz() == true ? 'Hibázhatsz egyet.' : 'Nem hibázhatsz többet!'"></span></h4>
+<div class="container">
+    <h3 id="question" align="center">
+        <span data-bind="html: canContinue() == true ? question() : 'A játéknak vége!'"></span>
+    </h3>
+</div>
+<h3 id="levelMessage" align="center" data-bind="visible: canContinue() == false">
+    <span data-bind="text: level()"></span> szintet sikerült teljesítened.
+</h3>
 <br>
-<form>
+<form data-bind="visible: canContinue()">
     <div class="container">
         <button id="a" type="button" data-bind="html: answer_a()" onclick="answer(this.innerHTML)"></button>
         <button id="b" type="button" data-bind="html: answer_b()" onclick="answer(this.innerHTML)"></button>
@@ -20,12 +29,22 @@
 
         <table>
             <tr>
-                <td><button type="button" class="myButton" data-bind="enable: felez" onclick="felez()">50:50</button></td>
-                <td><button type="button" class="myButton" data-bind="enable: kov" onclick="kovetkezo()">
-                    <span class="glyphicon glyphicon-forward"></span>
-                </button></td>
+                <td>
+                    <button type="button" class="myButton" data-bind="enable: felez" onclick="felez()">50:50</button>
+                </td>
+                <td>
+                    <button type="button" class="myButton" data-bind="enable: kov" onclick="kovetkezo()">
+                        <span class="glyphicon glyphicon-forward"></span>
+                    </button>
+                </td>
             </tr>
         </table>
+    </div>
+</form>
+
+<form>
+    <div class="container">
+        <button type="button" class="logout" onclick="window.location.href='Logout'">Logout</button>
     </div>
 </form>
 </body>

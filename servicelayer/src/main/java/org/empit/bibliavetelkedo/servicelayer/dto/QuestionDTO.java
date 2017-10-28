@@ -10,6 +10,9 @@ public class QuestionDTO implements Serializable {
     @JsonProperty("id")
     private Long id;
 
+    @JsonProperty("level")
+    private Long level;
+
     @JsonProperty("question")
     private String question;
 
@@ -33,6 +36,17 @@ public class QuestionDTO implements Serializable {
 
     @JsonProperty("canFault")
     private boolean canFault;
+
+    @JsonProperty("canContinue")
+    private boolean canContinue;
+
+    public boolean isCanContinue() {
+        return canContinue;
+    }
+
+    public void setCanContinue(boolean canContinue) {
+        this.canContinue = canContinue;
+    }
 
     public Long getId() {
         return id;
@@ -104,5 +118,13 @@ public class QuestionDTO implements Serializable {
 
     public void setCanFault(boolean canFault) {
         this.canFault = canFault;
+    }
+
+    public Long getLevel() {
+        return level;
+    }
+
+    public void setLevel(Long level) {
+        this.level = level;
     }
 }

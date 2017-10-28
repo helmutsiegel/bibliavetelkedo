@@ -41,13 +41,19 @@ function registartion() {
     xhttp.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
             var response = JSON.parse(this.responseText);
-            alert(response);
-
+            if(response.successfull){
+                window.location.href='RegSuccessfull';
+            }else{
+                if(response.messages[0] == "username_exists"){
+                    document.getElementById('myModal').style.display = "none";
+                    alert("A felhasználónév már használatban van!");
+                }
+            }
         }
     };
 
     xhttp.open("POST", "rest/registration", true);
     xhttp.setRequestHeader("Content-Type", "application/json");
     xhttp.send(msg);
-
+    document.getElementById('myModal').style.display = "block";
 }

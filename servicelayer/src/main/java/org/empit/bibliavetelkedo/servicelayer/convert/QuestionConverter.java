@@ -16,6 +16,7 @@ public class QuestionConverter {
         questionDTO.setCanHalf(true);
         questionDTO.setCanFault(true);
         questionDTO.setCanNext(true);
+        questionDTO.setCanContinue(true);
         return questionDTO;
     }
 }
