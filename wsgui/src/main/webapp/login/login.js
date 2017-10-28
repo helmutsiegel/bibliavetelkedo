@@ -52,7 +52,7 @@ function registartion() {
             failMessage += "a jelszó tul rövid, ";
         }
     }
-    
+
     if (fails == false) {
 
         var msg = JSON.stringify({

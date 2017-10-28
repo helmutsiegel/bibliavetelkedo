@@ -42,11 +42,11 @@ public class QuestionRest {
     @Path("/answer")
     @Produces("application/json")
     public boolean answer(@QueryParam("username") String username,
-                          @QueryParam("qid") Long qid,
+                          @QueryParam("ansId") Long ansid,
                           @QueryParam("answer") String answer) {
 
         QuestionService instance = QuestionService.getInstance();
-        return instance.answer(username, qid, answer);
+        return instance.answer(username, ansid, answer);
 
     }
 
@@ -54,18 +54,18 @@ public class QuestionRest {
     @Path("/halfing")
     @Produces("application/json")
     public List<String> halfing(@QueryParam("username") String username,
-                                @QueryParam("qid") Long qid) {
+                                @QueryParam("ansId") Long ansId) {
         QuestionService instance = QuestionService.getInstance();
-        return instance.halfing(username, qid);
+        return instance.halfing(username, ansId);
     }
 
     @GET
     @Path("/nexting")
     @Produces("application/json")
     public boolean nexting(@QueryParam("username") String username,
-                           @QueryParam("qid") Long qid) {
+                           @QueryParam("ansId") Long ansId) {
         QuestionService instance = QuestionService.getInstance();
-        return instance.nexting(username, qid);
+        return instance.nexting(username, ansId);
     }
 
 }

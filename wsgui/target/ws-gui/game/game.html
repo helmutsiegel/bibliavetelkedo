@@ -11,8 +11,18 @@
 <form>
     <div class="container" data-bind="visible: canContinue()">
 
-        <h3 data-bind="visible: canContinue()">Szint: <span
-                data-bind="html: level()"></span></h3>
+        <table>
+            <tr>
+                <td>
+                    <h3 data-bind="visible: canContinue()">Szint: <span
+                            data-bind="html: level()"></span></h3>
+                </td>
+
+                <td>
+                    <h3 align="right" style="color: red">0:<span  data-bind="text: time()"></span></h3>
+                </td>
+            </tr>
+        </table>
 
         <h3 data-bind="visible: canContinue(), style: { color: hibaz() == true ? 'green' : 'red' }"><span
                 data-bind="text: hibaz() == true ? 'Hibázhatsz egyet.' : 'Nem hibázhatsz többet!'"></span></h3>

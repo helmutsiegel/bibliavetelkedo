@@ -4,12 +4,13 @@ var obj = {
     answer_b: ko.observable(''),
     answer_c: ko.observable(''),
     answer_d: ko.observable(''),
-    qid: null,
+    ansId: null,
     kov: ko.observable(false),
     felez: ko.observable(false),
     hibaz: ko.observable(false),
     level: ko.observable(0),
-    canContinue: ko.observable(false)
+    canContinue: ko.observable(false),
+    time: ko.observable(60)
 
 };
 
@@ -27,7 +28,7 @@ function getNextQuestion() {
             obj.answer_b(response.answerB);
             obj.answer_c(response.answerC);
             obj.answer_d(response.answerD);
-            obj.qid = response.id;
+            obj.ansId = response.ansId;
             obj.felez(response.canHalf);
             obj.kov(response.canNext);
             obj.hibaz(response.canFault);
@@ -38,6 +39,10 @@ function getNextQuestion() {
             document.getElementById("c").disabled = false;
             document.getElementById("d").disabled = false;
 
+            obj.time(60);
+            if (obj.canContinue() == true) {
+                startTimer();
+            }
         }
     };
 
@@ -47,17 +52,18 @@ function getNextQuestion() {
 }
 
 function answer(ans) {
+    stopTimer();
     var xhttp = new XMLHttpRequest();
     var me = this;
     xhttp.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
-            var resp = JSON.parse(xhttp.responseText)
+            var resp = JSON.parse(xhttp.responseText);
             me.getNextQuestion();
         }
     };
 
     xhttp.open("GET", "rest/questions/answer?username=" + getCookie("username")
-        + "&qid=" + obj.qid + "&answer=" + ans, true);
+        + "&ansId=" + obj.ansId + "&answer=" + ans, true);
     xhttp.send();
 }
 
@@ -80,7 +86,7 @@ function felez() {
         };
 
         xhttp.open("GET", "rest/questions/halfing?username=" + getCookie("username")
-            + "&qid=" + obj.qid, true);
+            + "&ansId=" + obj.ansId, true);
         xhttp.send();
     }
 }
@@ -99,7 +105,29 @@ function kovetkezo() {
             }
         };
         xhttp.open("GET", "rest/questions/nexting?username=" + getCookie("username")
-            + "&qid=" + obj.qid, true);
+            + "&ansId=" + obj.ansId, true);
         xhttp.send();
+    }
+}
+
+var start = true;
+
+function startTimer() {
+    start = true;
+}
+
+function stopTimer() {
+    start = false
+}
+
+var myVar = setInterval(timerFunc, 1000);
+
+function timerFunc() {
+    if (start == true) {
+        if (obj.time() == 0) {
+            answer("incorrect");
+        } else {
+            obj.time(obj.time() - 1);
+        }
     }
 }

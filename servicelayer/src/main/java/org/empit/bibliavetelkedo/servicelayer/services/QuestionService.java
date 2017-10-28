@@ -35,17 +35,38 @@ public class QuestionService {
         GameBE gameBE = games.get(0);
         final int[] incorrects = {0};
         gameBE.getAnswers().forEach(a -> {
-            if (!a.getAnswer().equals(a.getQuestion().getCorrectAnswer())) {
+            if (!a.getAnswer().equals(a.getQuestion().getCorrectAnswer())
+                    && !a.getAnswer().equals("NEXT_QUESTION") && !a.getAnswer().equals("NO_ANSWER")) {
                 incorrects[0]++;
             }
         });
-        QuestionDTO resp = QuestionConverter.fromBEToDTO(questionRepo.getNext(gameBE.getQuestions()));
+
+        AnswerBE whereNotAnswer = AnswerRepo.getInstance().getWhereNotAnswer(gameBE.getId());
+
+        QuestionBE next = null;
+
+        if (null != whereNotAnswer) {
+            next = whereNotAnswer.getQuestion();
+        } else {
+            next = questionRepo.getNext(gameBE.getQuestions());
+            AnswerBE answerBE = new AnswerBE();
+            answerBE.setAnswer("NO_ANSWER");
+            answerBE.setQuestion(next);
+            answerBE.setGame(gameBE);
+            AnswerRepo.getInstance().insert(answerBE);
+            whereNotAnswer = answerBE;
+        }
+
+        QuestionDTO resp = QuestionConverter.fromBEToDTO(next);
+        resp.setAnsId(whereNotAnswer.getId());
         resp.setLevel((long) gameBE.getCorrectAnswers().size() + 1);
 
         if (incorrects[0] > 1 || gameBE.getCorrectAnswers().size() == 10) {
             resp.setCanContinue(false);
             resp.setLevel((long) gameBE.getCorrectAnswers().size());
         }
+
+
         if (gameBE.getUsedHelps().parallelStream().anyMatch(e -> e.getHelp() == HelpEnum.HALVING)) {
             resp.setCanHalf(false);
         }
@@ -60,15 +81,14 @@ public class QuestionService {
 
     }
 
-    public boolean answer(String username, Long qid, String answer) {
+    public boolean answer(String username, Long ansid, String answer) {
         boolean resp = true;
         GameRepo gameRepo = GameRepo.getInstance();
         GameBE gameBE = gameRepo.getByUsername(username);
-        QuestionBE questionBE = QuestionRepo.getInstance().getById(qid);
-        AnswerBE answerBE = new AnswerBE();
+        AnswerBE answerBE = AnswerRepo.getInstance().getById(ansid);
         answerBE.setAnswer(answer);
-        answerBE.setQuestion(questionBE);
-        answerBE.setGame(gameBE);
+        QuestionBE questionBE = answerBE.getQuestion();
+
         if (!answer.equals(questionBE.getCorrectAnswer())) {
             if (gameBE.getUsedHelps().parallelStream().anyMatch(e -> e.getHelp() == HelpEnum.INCORRECT)) {
                 resp = false;
@@ -77,14 +97,15 @@ public class QuestionService {
                 gameRepo.save(gameBE);
             }
         }
-        AnswerRepo.getInstance().insert(answerBE);
+        AnswerRepo.getInstance().save(answerBE);
         return resp;
     }
 
-    public List<String> halfing(String username, Long qid) {
+    public List<String> halfing(String username, Long ansId) {
         GameRepo gameRepo = GameRepo.getInstance();
-        GameBE gameBE = gameRepo.getByUsername(username);
-        QuestionBE questionBE = QuestionRepo.getInstance().getById(qid);
+        AnswerBE answerBE = AnswerRepo.getInstance().getById(ansId);
+        QuestionBE questionBE = answerBE.getQuestion();
+        GameBE gameBE = answerBE.getGame();
         if (!gameBE.getUsedHelps().parallelStream().anyMatch(e -> e.getHelp() == HelpEnum.HALVING)) {
             int index = randomGenerator.nextInt(3);
             List<String> result = new ArrayList<>();
@@ -110,14 +131,18 @@ public class QuestionService {
         return res;
     }
 
-    public boolean nexting(String username, Long qid) {
+    public boolean nexting(String username, Long ansId) {
         GameRepo gameRepo = GameRepo.getInstance();
         GameBE gameBE = gameRepo.getByUsername(username);
-        QuestionBE questionBE = QuestionRepo.getInstance().getById(qid);
+        AnswerRepo answerRepo = AnswerRepo.getInstance();
+        AnswerBE answerBE = answerRepo.getById(ansId);
+
         if (gameBE.getUsedHelps().parallelStream().anyMatch(e -> e.getHelp() == HelpEnum.NEXT_QUESTION)) {
             return false;
         }
         gameBE.getUsedHelps().add(HelpRepo.getInstance().getByEnum(HelpEnum.NEXT_QUESTION));
+        answerBE.setAnswer("NEXT_QUESTION");
+        answerRepo.save(answerBE);
         gameRepo.save(gameBE);
         return true;
     }

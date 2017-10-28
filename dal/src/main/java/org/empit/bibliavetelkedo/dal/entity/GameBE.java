@@ -70,7 +70,8 @@ public class GameBE implements Serializable {
 
     public List<AnswerBE> getCorrectAnswers() {
         return this.getAnswers().stream()
-                .filter(a -> a.getQuestion().getCorrectAnswer().equals(a.getAnswer()))
+                .filter(a -> a.getQuestion().getCorrectAnswer()
+                        .equals(a.getAnswer()))
                 .collect(Collectors.toList());
     }
 

@@ -53,8 +53,6 @@ function registartion() {
         }
     }
 
-
-
     if (fails == false) {
 
         var msg = JSON.stringify({

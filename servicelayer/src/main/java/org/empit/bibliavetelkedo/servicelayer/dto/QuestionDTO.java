@@ -10,6 +10,9 @@ public class QuestionDTO implements Serializable {
     @JsonProperty("id")
     private Long id;
 
+    @JsonProperty("ansId")
+    private Long ansId;
+
     @JsonProperty("level")
     private Long level;
 
@@ -126,5 +129,13 @@ public class QuestionDTO implements Serializable {
 
     public void setLevel(Long level) {
         this.level = level;
+    }
+
+    public Long getAnsId() {
+        return ansId;
+    }
+
+    public void setAnsId(Long ansId) {
+        this.ansId = ansId;
     }
 }

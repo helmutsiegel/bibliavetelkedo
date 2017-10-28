@@ -56,4 +56,24 @@ public class AnswerRepo extends GenericRepo<AnswerBE> {
         }
         return null;
     }
+
+    public AnswerBE getWhereNotAnswer(Long gameId) {
+        try {
+            em.clear();
+            Query query = em.createQuery("SELECT e FROM AnswerBE e where e.game.id = :id and e.answer like :noans");
+            query.setParameter("id", gameId);
+            query.setParameter("noans", "NO_ANSWER");
+
+            List<AnswerBE> result = (List<AnswerBE>) query.getResultList();
+            if (result == null || result.size() == 0) {
+                return null;
+            }
+            return result.get(0);
+        } catch (JPQLException e) {
+            //throw new RepositoryException();
+        } catch (IllegalArgumentException e) {
+            //throw new RepositoryException();
+        }
+        return null;
+    }
 }
