@@ -39,4 +39,15 @@ public class GameRest {
             return "{\"answer\": \"false\"}";
         }
     }
+
+    @GET
+    @Path("/delete")
+    @Produces("application/json")
+    public boolean delete(@QueryParam("username") String username) {
+        if (username != null) {
+            GameService instance = GameService.getInstance();
+            instance.deleteGame(username);
+        }
+        return true;
+    }
 }

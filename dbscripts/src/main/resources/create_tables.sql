@@ -17,7 +17,7 @@ CREATE TABLE `User` (
 
 CREATE TABLE `Game` (
   `id`     INT NOT NULL AUTO_INCREMENT,
-  `name`   VARCHAR(45),
+  `name`   VARCHAR(45) CHARACTER SET utf8,
   PRIMARY KEY (`id`),
   `userId` INT REFERENCES `User`.`id`,
   CONSTRAINT `user_f`
@@ -28,17 +28,17 @@ CREATE TABLE `Game` (
 
 CREATE TABLE `Question` (
   `id`             INT NOT NULL AUTO_INCREMENT,
-  `question`       VARCHAR(100)
+  `question`       VARCHAR(250)
                    CHARACTER SET utf8,
-  `answer_a`       VARCHAR(45)
+  `answer_a`       VARCHAR(100)
                    CHARACTER SET utf8,
-  `answer_b`       VARCHAR(45)
+  `answer_b`       VARCHAR(100)
                    CHARACTER SET utf8,
-  `answer_c`       VARCHAR(45)
+  `answer_c`       VARCHAR(100)
                    CHARACTER SET utf8,
-  `answer_d`       VARCHAR(45)
+  `answer_d`       VARCHAR(100)
                    CHARACTER SET utf8,
-  `correct_answer` VARCHAR(45)
+  `correct_answer` VARCHAR(100)
                    CHARACTER SET utf8,
   PRIMARY KEY (`id`)
 );
@@ -56,7 +56,9 @@ CREATE TABLE `Answer` (
   FOREIGN KEY (`questionId`)
   REFERENCES `Question` (`id`),
 
-  `answer`     VARCHAR(45),
+  `answer` VARCHAR(100)
+                   CHARACTER SET utf8,
+
   PRIMARY KEY (`id`)
 );
 

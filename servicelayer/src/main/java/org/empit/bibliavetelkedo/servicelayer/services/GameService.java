@@ -59,4 +59,13 @@ public class GameService {
         Collections.sort(result, Comparator.comparing(ResultDTO::getLevel).reversed());
         return result;
     }
+
+    public void deleteGame(String username){
+        GameRepo gameRepo = GameRepo.getInstance();
+        GameBE gameBE = gameRepo.getByUsername(username);
+        if(gameBE != null){
+            gameRepo.delete(gameBE);
+        }
+
+    }
 }

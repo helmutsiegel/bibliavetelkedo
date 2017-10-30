@@ -61,7 +61,7 @@ public class QuestionService {
         resp.setAnsId(whereNotAnswer.getId());
         resp.setLevel((long) gameBE.getCorrectAnswers().size() + 1);
 
-        if (incorrects[0] > 1 || gameBE.getCorrectAnswers().size() == 10) {
+        if (incorrects[0] > 1 || gameBE.getCorrectAnswers().size() == 45) {
             resp.setCanContinue(false);
             resp.setLevel((long) gameBE.getCorrectAnswers().size());
         }
